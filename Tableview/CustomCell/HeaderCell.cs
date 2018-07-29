@@ -1,5 +1,5 @@
 ﻿using System;
-
+using CoreGraphics;
 using Foundation;
 using UIKit;
 
@@ -26,10 +26,21 @@ namespace Tableview.CustomCell
             headerCell.Text = title;
             if(isexpandable)
             {
-               
+                orderText.Text = "apple";
                 headerArrow.Image = UIImage.FromBundle("uparrow");
             }else{
                 headerArrow.Image = UIImage.FromBundle("downarrow");
+            }
+        }
+
+        public void UpdateTextAnimation(bool isExpanded)
+        {
+            if(isExpanded)
+            {
+               // orderText.Frame = new CGRect(0, 0, 0, 0);
+            }
+            else{
+                
             }
         }
     }

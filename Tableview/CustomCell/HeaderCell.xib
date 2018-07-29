@@ -137,6 +137,13 @@
                 <outlet property="headerArrow" destination="ciT-na-adm" id="name-outlet-ciT-na-adm"/>
                 <outlet property="headerCell" destination="125" id="name-outlet-125"/>
                 <outlet property="orderText" destination="Zgy-io-hpZ" id="name-outlet-Zgy-io-hpZ"/>
+                <outlet property="orderNum" destination="7Ia-hC-9aN" id="name-outlet-7Ia-hC-9aN"/>
+                <outlet property="shippedText" destination="yqd-Lm-UUG" id="name-outlet-yqd-Lm-UUG"/>
+                <outlet property="shippedNum" destination="chp-wc-88T" id="name-outlet-chp-wc-88T"/>
+                <outlet property="processText" destination="9Ze-CT-xIv" id="name-outlet-9Ze-CT-xIv"/>
+                <outlet property="processNum" destination="Pp6-1j-LSI" id="name-outlet-Pp6-1j-LSI"/>
+                <outlet property="remainingText" destination="M7d-Xq-5mC" id="name-outlet-M7d-Xq-5mC"/>
+                <outlet property="remainInNum" destination="3Be-rX-gmb" id="name-outlet-3Be-rX-gmb"/>
             </connections>
             <point key="canvasLocation" x="72" y="66"/>
         </tableViewCell>
