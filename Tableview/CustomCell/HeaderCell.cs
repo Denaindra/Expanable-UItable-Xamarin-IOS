@@ -13,6 +13,7 @@ namespace Tableview.CustomCell
         static HeaderCell()
         {
             Nib = UINib.FromName("HeaderCell", NSBundle.MainBundle);
+        
         }
 
         protected HeaderCell(IntPtr handle) : base(handle)
