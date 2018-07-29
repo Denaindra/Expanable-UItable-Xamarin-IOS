@@ -21,6 +21,10 @@ namespace Tableview.CustomCell
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel headerCell { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel orderText { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
             if (headerArrow != null) {
@@ -31,6 +35,11 @@ namespace Tableview.CustomCell
             if (headerCell != null) {
                 headerCell.Dispose ();
                 headerCell = null;
+            }
+
+            if (orderText != null) {
+                orderText.Dispose ();
+                orderText = null;
             }
         }
     }

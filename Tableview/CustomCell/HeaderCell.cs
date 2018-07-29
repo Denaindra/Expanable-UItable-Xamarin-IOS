@@ -26,6 +26,7 @@ namespace Tableview.CustomCell
             headerCell.Text = title;
             if(isexpandable)
             {
+               
                 headerArrow.Image = UIImage.FromBundle("uparrow");
             }else{
                 headerArrow.Image = UIImage.FromBundle("downarrow");
