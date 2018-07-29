@@ -85,6 +85,14 @@
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\downarrow.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\downarrow.imageset\down-arrow-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\downarrow.imageset\down-arrow-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\downarrow.imageset\down-arrow.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\uparrow.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\uparrow.imageset\down-arrow %281%29-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\uparrow.imageset\down-arrow %281%29-2.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\uparrow.imageset\down-arrow %281%29.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
