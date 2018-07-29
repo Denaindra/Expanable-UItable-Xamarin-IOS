@@ -45,7 +45,7 @@ namespace Tableview
 
             TableView.Source = new TableSource(list, TableView);
             TableView.RowHeight = UITableView.AutomaticDimension;
-            TableView.SectionHeaderHeight = 80f;
+            TableView.SectionHeaderHeight = 72f;
 
         }
     }
