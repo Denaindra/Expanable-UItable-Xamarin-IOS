@@ -41,14 +41,7 @@ namespace Tableview
             tableView.EndUpdates();
             tableView.ReloadRows(paths, UITableViewRowAnimation.Fade);
            
-            //if(_isSectionOpen[section])
-            //{
-            //    _isSectionOpen[section] = false;
-            //}
-
-            //else{
-            //    _isSectionOpen[expandIndex] = true;
-            //}
+        
         }
         public override nint NumberOfSections(UITableView tableView)
         {
@@ -62,7 +55,7 @@ namespace Tableview
 
         public override UIView GetViewForHeader(UITableView tableView, nint section)
         {
-            //set header title and template
+            //set header title and template with click event
             HeaderCell header = tableView.DequeueReusableHeaderFooterView(HeaderCell.Key) as HeaderCell;
             header.SetHeaderText(((ExpandableListModel<String>)TableItems[(int)section]).Title);
             foreach (var view in header.Subviews)
