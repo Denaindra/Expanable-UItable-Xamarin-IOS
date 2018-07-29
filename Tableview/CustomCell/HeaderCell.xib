@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
@@ -16,20 +16,20 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="145"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
-                <rect key="frame" x="0.0" y="0.0" width="414" height="144"/>
+                <rect key="frame" x="0.0" y="0.0" width="414" height="144.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="122" translatesAutoresizingMaskIntoConstraints="NO" id="JKz-fX-o8W">
-                        <rect key="frame" x="16" y="8" width="382" height="30"/>
+                        <rect key="frame" x="20" y="11" width="374" height="30"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QAZ_34567876543" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="125">
-                                <rect key="frame" x="0.0" y="2.5" width="214.5" height="25.5"/>
+                                <rect key="frame" x="0.0" y="2.5" width="222" height="25.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downarrow" translatesAutoresizingMaskIntoConstraints="NO" id="ciT-na-adm" misplaced="YES">
-                                <rect key="frame" x="336.5" y="0.0" width="45.5" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downarrow" translatesAutoresizingMaskIntoConstraints="NO" id="ciT-na-adm">
+                                <rect key="frame" x="344" y="0.0" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Jse-GO-xAJ"/>
                                     <constraint firstAttribute="width" constant="30" id="u9W-ri-Iu6"/>
@@ -38,8 +38,43 @@
                         </subviews>
                     </stackView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4fm-iE-qw8">
-                        <rect key="frame" x="16" y="48.5" width="382" height="88"/>
+                        <rect key="frame" x="20" y="51.5" width="374" height="82.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Fpt-xM-UgH">
+                                <rect key="frame" x="5" y="31" width="364" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ordered" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Unp-bz-8U6">
+                                        <rect key="frame" x="0.0" y="0.0" width="63.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shipped" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsU-rA-2VA">
+                                        <rect key="frame" x="88.5" y="0.0" width="63.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Processed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQu-3w-p3w">
+                                        <rect key="frame" x="177" y="0.0" width="81" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remaming" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5w-jq-7ma">
+                                        <rect key="frame" x="283" y="0.0" width="81" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Fpt-xM-UgH" firstAttribute="centerY" secondItem="4fm-iE-qw8" secondAttribute="centerY" id="ZLi-OC-Psi"/>
+                            <constraint firstItem="Fpt-xM-UgH" firstAttribute="centerX" secondItem="4fm-iE-qw8" secondAttribute="centerX" id="aXd-il-kKJ"/>
+                        </constraints>
                     </view>
                 </subviews>
                 <color key="backgroundColor" red="0.9663731702280679" green="1" blue="0.9882568476467638" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -54,14 +89,13 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="headerCell" destination="125" id="name-outlet-125"/>
                 <outlet property="headerArrow" destination="ciT-na-adm" id="name-outlet-ciT-na-adm"/>
+                <outlet property="headerCell" destination="125" id="name-outlet-125"/>
             </connections>
             <point key="canvasLocation" x="72" y="102.5"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="downarrow" width="32" height="32"/>
-        <image name="uparrow" width="32" height="32"/>
+        <image name="downarrow" width="16" height="16"/>
     </resources>
 </document>
