@@ -21,8 +21,14 @@ namespace Tableview.CustomCell
         }
 
 
-        public void SetHeaderText(string title){
+        public void SetHeaderText(string title,bool isexpandable){
             headerCell.Text = title;
+            if(isexpandable)
+            {
+                headerArrow.Image = UIImage.FromBundle("uparrow");
+            }else{
+                headerArrow.Image = UIImage.FromBundle("downarrow");
+            }
         }
     }
 }

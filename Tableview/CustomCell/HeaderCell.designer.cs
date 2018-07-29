@@ -15,10 +15,19 @@ namespace Tableview.CustomCell
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIImageView headerArrow { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel headerCell { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
+            if (headerArrow != null) {
+                headerArrow.Dispose ();
+                headerArrow = null;
+            }
+
             if (headerCell != null) {
                 headerCell.Dispose ();
                 headerCell = null;

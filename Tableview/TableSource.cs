@@ -14,8 +14,7 @@ namespace Tableview
         List<ExpandableListModel<String>> TableItems;
         private bool[] _isSectionOpen;
         private UITableView tableView;
-        private bool isExpanable;
-        private int expandIndex;
+        private int expandIndex = -1;
      
         public TableSource(List<ExpandableListModel<String>> items, UITableView tableView)
         {
@@ -30,7 +29,7 @@ namespace Tableview
             var button = sender as UIButton;
             var section = button.Tag;
             _isSectionOpen[section] = !_isSectionOpen[section];
-            isExpanable = true;
+            expandIndex = (int)section;
             tableView.ReloadData();
             // Animate the section cells
             var paths = new NSIndexPath[RowsInSection(tableView, section)];
@@ -57,7 +56,14 @@ namespace Tableview
         {
             //set header title and template with click event
             HeaderCell header = tableView.DequeueReusableHeaderFooterView(HeaderCell.Key) as HeaderCell;
-            header.SetHeaderText(((ExpandableListModel<String>)TableItems[(int)section]).Title);
+            if( _isSectionOpen[section] == true)
+            {
+                header.SetHeaderText(((ExpandableListModel<String>)TableItems[(int)section]).Title,true);
+            }else{
+                header.SetHeaderText(((ExpandableListModel<String>)TableItems[(int)section]).Title, false);
+            }
+
+          
             foreach (var view in header.Subviews)
             {
                 if (view is UIButton)
